@@ -4,14 +4,14 @@ import { FaKey } from "react-icons/fa";
 
 function About() {
   return (
-    <div className="w-full px-7 mt-[5rem] mb-[4rem]" id="about">
+    <div className="w-full px-7 pt-[5rem] mb-[4rem]" id="about">
       <p className="text-red-500 mt-3 font-medium">About</p>
-      <div className="w-full flex mt-3 px-7 gap-x-8">
-        <p className="w-1/2 text-5xl font-extrabold">
+      <div className="w-full flex md:flex-row flex-col mt-3 px-7 gap-x-8">
+        <p className="w-full md:text-5xl text-2xl md:text-left text-center font-extrabold">
           Secure your business <br />
           needs
         </p>
-        <p className="w-1/2 text-right">
+        <p className="w-full md:text-right md:p-0 px-3 text-justify md:m-0 mt-8">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non adipisci
           <br /> enim animi culpa voluptatum quisquam cupiditate? Minima
           <br /> aut, esse culpa dignissimos eaque dolorem! Iste, nobis
@@ -19,8 +19,8 @@ function About() {
         </p>
       </div>
 
-      <div className="w-full flex justify-between mt-[5rem]">
-        <div className="w-30% drop-shadow-xl h-[14rem] rounded-md p-3 ">
+      <div className="w-full flex md:flex-row flex-col justify-between mt-[5rem]">
+        <div className="md:w-30% w-full drop-shadow-xl h-[14rem] rounded-md p-3 ">
           <div className="p-2 w-[2rem] bg-red-300 text-red-600 rounded-md">
             <BiWorld />
           </div>
@@ -34,7 +34,7 @@ function About() {
             Laboriosam accusantium ipsa ea quisquam!
           </p>
         </div>
-        <div className="w-30% drop-shadow-xl h-[14rem] rounded-md p-3">
+        <div className="md:w-30% w-full drop-shadow-xl h-[14rem] rounded-md p-3">
           <div className="p-2 w-[2rem] bg-red-300 text-red-600 rounded-md">
             <BsFillFolderFill />
           </div>
@@ -48,7 +48,7 @@ function About() {
             Laboriosam accusantium ipsa ea quisquam!
           </p>
         </div>
-        <div className="w-30% drop-shadow-xl h-[14rem] rounded-md p-3">
+        <div className="md:w-30% w-full drop-shadow-xl h-[14rem] rounded-md p-3">
           <div className="p-2 w-[2rem] bg-red-300 text-red-600 rounded-md">
             <FaKey />
           </div>
