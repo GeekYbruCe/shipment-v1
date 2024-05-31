@@ -40,7 +40,7 @@ function Service() {
               </div>
               <p className="text-xs font-bold">Lorem ipsum</p>
             </div>
-            <div className="flex md:justify-center justify-between md:gap-x-8 items-center text-xs mb-3">
+            <div className="flex  justify-between md:gap-x-8 items-center text-xs mb-3">
               <div className="flex gap-x-3 items-center">
                 <div className="p-1 w-[1.5rem] rounded-3xl flex justify-center items-center bg-red-500 text-[#ebebeb]">
                   1
@@ -51,7 +51,7 @@ function Service() {
               </div>
               <p>rafalgar Square, London</p>
             </div>
-            <div className="flex justify-between md:pr-[20%] md:l-[17%] items-center text-xs mb-3">
+            <div className="flex justify-between  items-center text-xs mb-3">
               <div className="flex gap-x-3 items-center">
                 <div className="p-1 w-[1.5rem] rounded-3xl flex justify-center items-center bg-red-500 text-[#ebebeb]">
                   2
@@ -62,8 +62,8 @@ function Service() {
               </div>
               <p>Cardiff Castle, Cardiff</p>
             </div>
-            <div className="flex justify-between md:pr-[12%] md:pl-[10%] items-center text-xs mb-3">
-              <div className="flex gap-x-3 items-center md:ml-[2rem]">
+            <div className="flex justify-between  items-center text-xs mb-3">
+              <div className="flex gap-x-3 items-center ">
                 <div className="p-1 w-[1.5rem] rounded-3xl flex justify-center items-center bg-red-500 text-[#ebebeb]">
                   3
                 </div>

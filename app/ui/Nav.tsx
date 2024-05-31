@@ -20,7 +20,7 @@ function Nav() {
         }`}
         onClick={() => setOpen(!open)}
       >
-        <Link className="NavLinks" href="#home">
+        <Link className="NavLinks" href="/">
           Home
         </Link>
         <Link className="NavLinks" href="#about">
@@ -33,7 +33,7 @@ function Nav() {
           Testimonial
         </Link>
 
-        <Link className="NavLinks" href="/signup">
+        <Link className="NavLinks" href="/sign-up">
           SignUp
         </Link>
         <Link className="NavLinks" href="/login">
