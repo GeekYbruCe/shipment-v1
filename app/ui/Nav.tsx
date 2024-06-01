@@ -3,8 +3,15 @@ import { useEffect, useState } from "react";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { RiCloseFill } from "react-icons/ri";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 function Nav() {
+  const router = usePathname();
+  const isDashboard = router.startsWith("/dashboard");
   const [open, setOpen] = useState(false);
+
+  if (isDashboard) {
+    return null;
+  }
   return (
     <nav className="nav">
       {/* <img src={logo} className="logo" /> */}
@@ -34,10 +41,10 @@ function Nav() {
         </Link>
 
         <Link className="NavLinks" href="/signup">
-          SignUp
+          Sign up
         </Link>
         <Link className="NavLinks" href="/login">
-          Login
+          Sign in
         </Link>
       </div>
 
