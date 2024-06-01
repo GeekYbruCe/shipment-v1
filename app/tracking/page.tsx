@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 export default function Page() {
   const [tracking_id, setTracking_id] = useState();
