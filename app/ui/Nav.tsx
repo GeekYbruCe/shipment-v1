@@ -33,7 +33,7 @@ function Nav() {
           Testimonial
         </Link>
 
-        <Link className="NavLinks" href="/sign-up">
+        <Link className="NavLinks" href="/signup">
           SignUp
         </Link>
         <Link className="NavLinks" href="/login">
