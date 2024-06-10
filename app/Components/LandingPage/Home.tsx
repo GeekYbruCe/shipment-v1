@@ -40,16 +40,14 @@ function HomePart() {
         <span className="text-red-500">logistics</span>
       </h1>
       <p className="md:text-center text-justify mt-5 text-sm px-10 text-gray-600">
-        At our company, we understand that your primary focus should be on
-        growing your business and reaching new heights. That&apos;s why
-        we&apos;re here to take the burden of logistics off your shoulders. With
-        our comprehensive logistics solutions, you can rest assured that every
-        aspect of your supply chain is managed with precision and efficiency.
-        From warehousing and inventory management to transportation and
-        delivery, we handle it all. Our team of experts is dedicated to ensuring
-        your products are delivered on time, every time, so you can focus on
-        what you do best - driving your business forward. Let us take care of
-        the logistics, so you can take care of your success.
+          At our company, we focus on handling all your logistics needs so you can concentrate
+          on expanding your business. Our services cover air freight for urgent shipments and
+          land freight for reliable trucking solutions.
+          We provide flexible storage and advanced warehousing for seamless inventory management.
+          Our rail freight service offers an eco-friendly transport option,
+          while our sea freight ensures efficient handling of large shipments.
+          With our expertise, your products are delivered punctually,
+          enabling you to drive your business forward with confidence.
       </p>
 
       <div className="w-[90%] mx-auto h-[28rem] mt-8 rounded-md overflow-hidden relative flex justify-center md:justify-end items-center mb-3">

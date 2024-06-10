@@ -14,8 +14,9 @@ function Testimonial() {
           <div>
             <p className="text-2xl md:text-5xl  font-bold text-red-500">25+</p>
             <p className="text-xs md:text-left text-justify">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatem ipsam officiis inventore distinctio ab necessitatibus{" "}
+              We have successfully partnered with over 25+ businesses
+              who trust us for their logistics needs. Their satisfaction is our priority,
+              and we strive to exceed their expectations with every shipment.{" "}
             </p>
           </div>
           <div>
@@ -23,8 +24,10 @@ function Testimonial() {
               1000+
             </p>
             <p className="text-xs md:text-left text-justify">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatem ipsam officiis inventore distinctio ab necessitatibus{" "}
+              Our services have facilitated the transport of over 1000+ shipments globally,
+              ensuring timely and secure delivery. Our clients' positive feedback speaks volumes about our
+              dedication to quality and reliability.
+            {" "}
             </p>
           </div>
         </div>

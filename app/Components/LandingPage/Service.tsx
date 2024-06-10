@@ -51,10 +51,12 @@ function Service() {
         to transport
       </p>
       <p className=" md:text-center text-justify mt-5">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non adipisci
-        enim animi culpa voluptatum quisquam cupiditate? Minima
-        <br /> aut, esse culpa dignissimos eaque dolorem! Iste, nobis repellat
-        beatae debitis delectus optio?
+        We are equipped to handle all your transportation needs
+        with utmost efficiency and reliability. Whether you need air freight for urgent deliveries,
+        land freight for regional distribution, or sea freight for international shipping,
+        our comprehensive services ensure your goods are transported safely and on time. Our advanced
+        logistics solutions and dedicated team are committed
+        to providing seamless transportation experiences
       </p>
 
       <div className="w-full flex md:flex-row flex-col mt-[5rem] md:px-[5rem] gap-x-2">
