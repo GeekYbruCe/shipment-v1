@@ -1,6 +1,46 @@
 import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { IoCopy } from "react-icons/io5";
+import cargo from "../../../public/cargo.jpg";
+import ship from "../../../public/ship.jpg";
+import truck from "../../../public/truck.jpg";
+import rail from "../../../public/rail.jpg";
+import gold from "../../../public/gold.jpg";
+import warehouse from "../../../public/warehouse.jpg";
+import Image from "next/image";
+
+const services = [
+  {
+    img: cargo,
+    name: "Air Freight",
+    des: "Competitive air shipping rates and professional service. Many airline companies for you to choose from, for off-gauge goods shipping services. But we guarantee you will stick with us if you choose us.",
+  },
+  {
+    img: ship,
+    name: "Sea Freight",
+    des: "We cover all global shipping lines, they offer us competitive rates, and stable space. With many shipping line companies, you can choose bulk-cargo ship, roll-on/roll-off ship, OOG service, and chartered ships.",
+  },
+  {
+    img: truck,
+    name: "Land Freight",
+    des: "We can arrange the pick-up and trucking service, anytime, in any city of the US and some cities across the Globe. We offer same day shipping and guarantee 2 days delivery on express shipments.",
+  },
+  {
+    img: rail,
+    name: "Rail Freight Forwarder",
+    des: "It doesn’t matter whether you are exporting, moving overseas or shipping your new entrepreneurial ventures’ first batch of products, door to door freight shipping does not have to be expensive or frustrating.",
+  },
+  {
+    img: gold,
+    name: "Storage Services",
+    des: "Our Safety Deposit Services are situated across select branches across the Globe. We provide world grade deposit boxes for the safe storage of your jewelries and highly sensitive documents.",
+  },
+  {
+    img: warehouse,
+    name: "Warehouse",
+    des: "We provide world-class warehouse services across the globe. Whatever you need stored for a long period, short period or before shipping, we are available to store for you.",
+  },
+];
 
 function Service() {
   return (
@@ -18,64 +58,7 @@ function Service() {
       </p>
 
       <div className="w-full flex md:flex-row flex-col mt-[5rem] md:px-[5rem] gap-x-2">
-        <div className="md:w-1/2 w-full">
-          <div className="flex justify-center items-center w-full gap-x-[4rem] bg-white rounded-md p-2 mb-3">
-            <div>
-              <p className="text-xs text-slate-500">From</p>
-              <p className="font-bold text-red-500">England</p>
-            </div>
-            <div className=" flex flex-col gap-y-1">
-              <FaArrowLeftLong />
-              <FaArrowRightLong />
-            </div>
-            <div>
-              <p className="text-xs text-slate-500">To</p>
-              <p className="font-bold text-red-500">Scotland</p>
-            </div>
-          </div>
-          <div className="bg-white rounded-md p-2 mb-3">
-            <div className="w-full px-3 flex justify-center gap-x-5 items-center mb-3">
-              <div className="flex text-xs items-center gap-x-2 text-red-500">
-                SHIP-34522 <IoCopy />
-              </div>
-              <p className="text-xs font-bold">Lorem ipsum</p>
-            </div>
-            <div className="flex  justify-between md:gap-x-8 items-center text-xs mb-3">
-              <div className="flex gap-x-3 items-center">
-                <div className="p-1 w-[1.5rem] rounded-3xl flex justify-center items-center bg-red-500 text-[#ebebeb]">
-                  1
-                </div>
-                <p>
-                  Depart from <span className="font-bold">England</span>
-                </p>
-              </div>
-              <p>rafalgar Square, London</p>
-            </div>
-            <div className="flex justify-between  items-center text-xs mb-3">
-              <div className="flex gap-x-3 items-center">
-                <div className="p-1 w-[1.5rem] rounded-3xl flex justify-center items-center bg-red-500 text-[#ebebeb]">
-                  2
-                </div>
-                <p>
-                  Transit in <span className="font-bold">Wales</span>
-                </p>
-              </div>
-              <p>Cardiff Castle, Cardiff</p>
-            </div>
-            <div className="flex justify-between  items-center text-xs mb-3">
-              <div className="flex gap-x-3 items-center ">
-                <div className="p-1 w-[1.5rem] rounded-3xl flex justify-center items-center bg-red-500 text-[#ebebeb]">
-                  3
-                </div>
-                <p>
-                  Arrived at <span className="font-bold">Scotland</span>
-                </p>
-              </div>
-              <p>Edinburgh Castle, Edinburgh</p>
-            </div>
-          </div>
-        </div>
-        <div className="md:w-1/2 w-full bg-white rounded-md p-2">
+        {/* <div className="md:w-1/2 w-full bg-white rounded-md p-2">
           <p className=" md:text-3xl text-2xl mt-3 font-extrabold mb-3">
             Inland and ocean shipping solutions
           </p>
@@ -103,6 +86,27 @@ function Service() {
             </div>
             <p>Lorem ipsum dolor sit amet consectetur</p>
           </div>
+        </div> */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 items-start">
+          {services.map((service, index) => (
+            <div key={index} className="w-80 ">
+              <div className="w-80 h-48 overflow-hidden mb-4 cursor-pointer">
+                <Image
+                  src={service.img}
+                  alt="service"
+                  className="w-full h-full object-contain hover:scale-105 transition duration-150 ease-in-out"
+                />
+              </div>
+
+              <h3 className="font-semibold text-2xl text-black mb-4 px-4 cursor-pointer">
+                {service.name}
+              </h3>
+
+              <p className="text-base text-justify text-gray-600 px-4">
+                {service.des}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </div>

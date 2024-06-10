@@ -4,6 +4,9 @@ import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { RiCloseFill } from "react-icons/ri";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import logo from "../../public/logo.jpg";
+import Image from "next/image";
+
 function Nav() {
   const router = usePathname();
   const isDashboard = router.startsWith("/dashboard");
@@ -16,7 +19,7 @@ function Nav() {
     <nav className="nav">
       {/* <img src={logo} className="logo" /> */}
       <Link href="/">
-        <p className="font-bold">GLS</p>
+        <Image src={logo} alt="logo" className="w-11 h-11 object-contain"  />
       </Link>
 
       <div
